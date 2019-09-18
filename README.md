@@ -1,0 +1,2 @@
+# componentsOfWxMiniProgram
+小程序一些自定义组件
