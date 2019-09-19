@@ -1,0 +1,19 @@
+<view class="pb_30">
+  <view class="mt_20">
+    <view class="bg_white p_30"><text class="code" decode="true" space="true">&lt;tabbar&gt;&lt;/tabbar&gt;</text></view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">参数</view>
+    <view class="bg_white p_30">
+      <view class="mt_10"><text class="code">state</text>设置当前显示的tab下标，默认<text class="code">0</text></view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">方法</view>
+    <view class="bg_white p_30">
+      无
+    </view>
+  </view>
+</view>
+
+<tabbar></tabbar>

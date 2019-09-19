@@ -1,0 +1,90 @@
+.authmenu{
+  position: absolute;
+  top:0rpx;
+  height: 100%;
+  width: 100%;
+  z-index: 400;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.authmainView{
+  width:80%;
+  margin: 200rpx auto 0;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.topTitle{
+  color:#333333;
+  font-size: 36rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-weight: bold;
+  height:90rpx;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+.pic {
+  text-align: center;
+}
+.authImage{
+  width:120rpx;
+  height:120rpx;
+  margin-top: 20rpx;
+  border-radius: 60rpx;
+}
+.words{
+  font-size: 30rpx;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+  height:60rpx;
+  color:#333;
+}
+.line{
+  height:2rpx;
+  background-color: #f1f1f1;
+  margin: 10rpx 50rpx;
+}
+.words2{
+  font-size: 26rpx;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+  height:40rpx;
+  color:#999999;
+}
+.words2 .dots {
+  font-weight: bold;
+}
+.bottomview{
+  text-align: center;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  border-top:2rpx solid #f1f1f1;
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+/*按钮样式清除*/
+button {
+  border: none;
+  text-align: inherit;
+  padding: 0;
+  margin:0;
+  line-height: inherit;
+  background: transparent;
+  color: inherit;
+  border-radius: 0;
+  font-size: inherit;
+}
+button:after {
+  border: none;
+}
+.authbtn{
+  color:#6ab82c;
+  font-size: 30rpx;
+  border: 0;
+  padding: 20rpx 0;
+}
+.authbtn-no {
+  font-size: 30rpx;
+  border: 0;
+  padding: 20rpx 0;
+  color: #666;
+}

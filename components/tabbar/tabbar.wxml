@@ -1,0 +1,22 @@
+<view class='nav'>
+    <view class='nav-list'>
+        <view class='nav-box {{ state == 0 ?"nav-main-img":""}}' style="padding-top:{{10+iphoneXBottom/2}}rpx;padding-bottom:{{10+iphoneXBottom/2}}rpx;" bindtap='navigatorUrl' data-url="/pages/index/index">
+            <label class='img img1'>
+                <image mode='widthFix' src='/images/circle1.png'></image>
+            </label>
+            <label class='img img2'>
+                <image mode='widthFix' src='/images/circle2.png'></image>
+            </label>
+            <text class='text'>首页</text>
+        </view>
+        <view class='nav-box {{ state == 1 ?"nav-main-img":""}}' style="padding-top:{{10+iphoneXBottom/2}}rpx;padding-bottom:{{10+iphoneXBottom/2}}rpx;" bindtap='navigatorUrl' data-url="/pages/mine/mine">
+            <label class='img img1'>
+                <image mode='widthFix' src='/images/square1.png'></image>
+            </label>
+            <label class='img img2'>
+                <image mode='widthFix' src='/images/square2.png'></image>
+            </label>
+            <text class='text'>个人中心</text>
+        </view>
+    </view>
+</view>

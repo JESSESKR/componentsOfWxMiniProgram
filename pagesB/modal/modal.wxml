@@ -1,0 +1,59 @@
+<view class="pb_30">
+  <view class="mt_20">
+    <view class="bg_white p_30"><text class="code" decode="true" space="true">&lt;modal id=""&gt;自定义内容&lt;/modal&gt;</text></view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">参数</view>
+    <view class="bg_white p_30">
+      <view class="mt_10"><text class="code">boxWidth</text>：弹出层的宽度，默认<text class="code">480</text></view>
+      <view class="mt_10"><text class="code">boxPadding</text>：弹出层是否有padding，默认<text class="code">true</text></view>
+      <view class="mt_10"><text class="code">boxHaveBg</text>：弹出层是否有白色背景，默认<text class="code">true</text></view>
+      <view class="mt_10"><text class="code">bottomIn</text>：弹出层从底部进入动画，默认<text class="code">false</text></view>
+      <view class="mt_10"><text class="code">showClose</text>：弹出层是否显示底部关闭按钮，默认<text class="code">false</text></view>
+      <view class="mt_10"><text class="code">maskClose</text>：弹出层是否能点击遮罩关闭，默认<text class="code">true</text></view>
+      <view class="mt_10"><text class="code">boxTop</text>：弹出层距离顶部的距离，默认<text class="code">50%</text></view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">方法</view>
+    <view class="bg_white p_30">
+      <view class="mt_10">showModal（<text class="code">openCallback</text>，<text class="code">closeCallback</text>）</view>
+      <view class="mt_10"><text class="code">openCallback</text>：打开弹出层时的回调</view>
+      <view class="mt_10"><text class="code">closeCallback</text>：完全关闭弹出层时的回调</view>
+      <view class="mt_20">closeModal（<text class="code">closeCallback</text>）</view>
+      <view class="mt_10"><text class="code">closeCallback</text>：完全关闭弹出层时的回调，tip:会覆盖打开时传入的closeCallback</view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="bg_white p_30">
+      <view class="mt_10"><button class="btn" data-index="1" catchtap="defaultModal">默认</button></view>
+      <view class="mt_10"><button class="btn" data-index="2" catchtap="defaultModal">设置<text class="code">boxWidth</text>为600</button></view>
+      <view class="mt_10"><button class="btn" data-index="3" catchtap="defaultModal">设置<text class="code">boxPadding</text>为0</button></view>
+      <view class="mt_10"><button class="btn" data-index="4" catchtap="defaultModal">设置<text class="code">boxHaveBg</text>为false</button></view>
+      <view class="mt_10"><button class="btn" data-index="5" catchtap="defaultModal">设置<text class="code">bottomIn</text>为true</button></view>
+      <view class="mt_10"><button class="btn" data-index="6" catchtap="defaultModal">设置<text class="code">showClose</text>为true</button></view>
+      <view class="mt_10"><button class="btn" data-index="7" catchtap="defaultModal">设置<text class="code">maskClose</text>为false</button></view>
+      <view class="mt_10"><button class="btn" data-index="8" catchtap="defaultModal">设置<text class="code">boxTop</text>30%</button></view>
+    </view>
+  </view>
+</view>
+
+<!-- 默认弹窗 -->
+<modal id="modal1"><view>test</view></modal>
+
+<!-- 自定义设置弹窗宽度 -->
+<modal id="modal2" boxWidth="600"><view>test</view></modal>
+
+<!-- 自定义padding -->
+<modal id="modal3" boxPadding="{{false}}"><view>test</view></modal>
+
+<!-- 弹出层不设置背景 -->
+<modal id="modal4" boxHaveBg="{{false}}"><view>test</view></modal>
+
+<modal id="modal5" bottomIn="{{true}}"><view>test</view></modal>
+
+<modal id="modal6" showClose="{{true}}"><view>test</view></modal>
+
+<modal id="modal7" maskClose="{{false}}"><view>test</view><view class="text-c"><button class="btn" catchtap="close">关闭</button></view></modal>
+
+<modal id="modal8" boxTop="30%"><view>test</view></modal>

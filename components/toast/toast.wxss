@@ -1,0 +1,40 @@
+.modal-bg {
+  position: fixed;
+  left: 0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.modal-box {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1001;
+  padding: 30rpx 60rpx;
+  border-radius: 30rpx;
+  opacity: 0;
+  transition: opacity .2s;
+  text-align: center;
+}
+.modal-bg.on {
+  opacity: 1;
+}
+.modal-box.on {
+  opacity: 1;
+}
+.title {
+  display: inline-block;
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  padding:4rpx 20rpx;
+  line-height:40rpx;
+  border-radius: 8rpx;
+  font-size:24rpx;
+}

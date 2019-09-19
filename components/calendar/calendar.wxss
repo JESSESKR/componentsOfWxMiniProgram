@@ -1,0 +1,71 @@
+/* 日历 */
+.calendarList {margin-top: 20rpx;background-color: #fff;}
+.calendarList.calendarList-horizontal {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  font-size: 0;
+}
+.calendarList .yearTitle {
+  text-align: center;
+  font-size: 40rpx;
+  color: #666;
+  padding: 20rpx 0;
+  font-family: Arial;
+}
+.calendarList.calendarList-horizontal .calendar_cell {
+  display: inline-block;
+  white-space: normal;
+}
+.calendar_cell .calendar_head {
+  font-size: 30rpx;
+  padding: 10rpx;
+  text-align: left;
+}
+.calendar_cell .calendar_head .calendar_month {
+  display: inline-block;
+  padding: 0 0 10rpx;
+  border-bottom: 4px solid #1ed2c7;
+}
+.calendar_bd {
+  width: 100%;
+  margin-top: 10rpx;
+  padding: 0 0 20rpx;
+}
+.header{font-size: 0;}
+.header>view{display: inline-block;width: 14.285%;color: #666;font-size: 30rpx;text-align: center;padding: 20rpx 0;}
+.weekMark{position: relative;width: 80%;margin: 0 auto;}
+.weekMark view{position: absolute;bottom: 0;left: 0;width: 100%;border-bottom: 2px solid #69f;}
+.date-box{font-size: 0;padding: 0;margin: 0;}
+.date-box>view{position: relative;display: inline-block;width: 14.285%;text-align: center;vertical-align: middle;margin-top: 20rpx;font-family: Arial;}
+.date-head {
+  box-sizing: border-box;
+  font-size: 24rpx;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.activeDay .date-head{width: 100%;text-align: center;background-color: #1ed2c7;margin: 0 auto;}
+.activeDay .date-head .date-num {color: #fff;}
+.yan {
+  display: inline-block;
+  font-size: 24rpx;
+  transform: scale(0.8,0.8) translate(0,-2rpx);
+  transform-origin: 100% 100%;
+}
+.date-box .date-price {
+  color: #1ed2c7;
+  line-height: 20rpx;
+}
+.date-box .activeDay .date-price {
+  color: #fff;
+}
+.slideArea {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+}
+swiper {
+  height: auto;
+}

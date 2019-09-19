@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "导航栏",
+  "usingComponents": {
+    "nav": "/components/nav/nav"
+  }
+}

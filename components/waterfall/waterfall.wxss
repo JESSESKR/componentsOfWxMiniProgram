@@ -1,0 +1,59 @@
+.list1 {
+    margin-top: 20rpx;
+    padding:0 10rpx;
+    width: 100%;
+  }
+  .list1 .item {
+    width: 360rpx;
+    margin-bottom: 10rpx;
+  }
+  .list1 .item .item-inner {
+    position: relative;
+  }
+  .list1 .item .item-inner image {
+      width: 100%;
+  }
+  .list1 .item-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10rpx 16rpx;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .list1 .item-bottom .date {
+    font-size: 24rpx;
+    color: #fff;
+  }
+  .list1 .item-bottom .like {
+    display: flex;
+    align-items: center;
+  }
+  .list1 .item-bottom .like .icon-like {
+    width: 20rpx;
+    height: 18rpx;
+  }
+  .list1 .item-bottom .like text {
+    color: #fff;
+    font-size: 24rpx;
+    margin-left: 8rpx;
+  }
+  .list1:after {
+    display: table;
+    content: "";
+    height: 0;
+    clear: both;
+  }
+  .list1 .listleft {
+    float: left;
+  }
+  .list1 .listright {
+    float: left;
+    margin-left: 10rpx;
+  }
+  .list1 .item-inner .txt {
+    word-break: break-all;
+  }

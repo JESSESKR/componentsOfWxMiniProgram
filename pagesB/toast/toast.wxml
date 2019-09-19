@@ -1,0 +1,33 @@
+<view class="pb_30">
+  <view class="mt_20">
+    <view class="bg_white p_30"><text class="code" decode="true" space="true">&lt;toast id=""&gt;&lt;/toast&gt;</text></view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">参数</view>
+    <view class="bg_white p_30">无</view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">方法</view>
+    <view class="bg_white p_30">
+      <view class="mt_10">show（<text class="code">title</text>，<text class="code">closeCallback</text>，<text class="code">time</text>）</view>
+      <view class="mt_10"><text class="code">title</text>：文字</view>
+      <view class="mt_10"><text class="code">closeCallback</text>：toast完全关闭时的回调函数</view>
+      <view class="mt_10"><text class="code">time</text>：toast显示持续时间</view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="bg_white p_30">
+      <view class="mt_10"><button class="btn" data-index="1" catchtap="showToast">默认</button></view>
+      <view class="mt_10"><button class="btn" data-index="2" catchtap="showToast">完全关闭时回调</button></view>
+      <view class="mt_10"><button class="btn" data-index="3" catchtap="showToast">显示5秒</button></view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">使用场景</view>
+    <view class="bg_white p_30">
+      <view class="mt_10 breakall">使用原生wx.showToast时前面如果调用了wx.hideLoading()的话，wx.showToast会被直接关闭</view>
+    </view>
+  </view>
+</view>
+
+<toast id="toast"></toast>

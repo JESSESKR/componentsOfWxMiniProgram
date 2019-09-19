@@ -1,0 +1,203 @@
+/*菜单1*/
+.menu1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 30rpx;
+  background-color: #fff;
+  padding: 30rpx 10rpx;
+  border: 1px solid #eee;
+  box-shadow: 0 0 20rpx #eee;
+  border-radius: 20rpx;
+}
+.menu1 .menucell {
+  flex: 1;
+}
+.menu1 .menucell .menupic {
+  text-align: center;
+  padding: 20rpx 0;
+}
+.menu1 .menucell .menupic image {
+  width: 90rpx;
+  height: 90rpx;
+}
+.menu1 .menucell .menutxt {
+  color: #333;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+/*菜单2*/
+.menu2 {
+  margin:0 30rpx;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 0 20rpx #eee;
+  border-radius: 20rpx;
+}
+.menu2 .menucell {
+  padding: 30rpx 80rpx 30rpx 100rpx;
+  position: relative;
+  border-top: 1px solid #eee;
+}
+.menu2 .menucell:first-child {
+  border-top: none
+}
+.menu2 .menucell:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 40rpx;
+  top: 40rpx;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 16rpx;
+  height: 16rpx;
+}
+.menu2 .menupic {
+  position: absolute;
+  left: 30rpx;
+  top: 28rpx;
+}
+.menu2 .menupic image{
+  width: 40rpx;
+  vertical-align: top;
+}
+.menu2 .menutxt {
+  color: #333;
+  font-size: 28rpx;
+}
+
+/*菜单3*/
+.menu3 .menucell {
+  padding: 30rpx 80rpx 30rpx 120rpx;
+  position: relative;
+  margin-top: 0;
+  background-color: #fff;
+  transition: background-color .2s;
+  border-top: 1px solid #eee;
+}
+.menu3 .menucell:first-child {
+  border-top: 0;
+}
+.menu3 .menucell.active {
+  background-color: #fafafa;
+}
+.menu3 .menucell:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 40rpx;
+  top: 40rpx;
+  border-top: 2px solid #c4c4c6;
+  border-right: 2px solid #c4c4c6;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 16rpx;
+  height: 16rpx;
+}
+.menu3 .menupic {
+  position: absolute;
+  left: 50rpx;
+  top: 26rpx;
+  line-height: 0;
+}
+.menu3 .menupic image{
+  width: 50rpx;
+  vertical-align: middle;
+}
+.menu3 .menutxt {
+  color: #666;
+  font-size: 32rpx;
+}
+
+.menu3 .menucell2 {
+  padding: 30rpx 40rpx 30rpx 120rpx;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  background-color: #fff;
+  transition: background-color .2s;
+  border-top: 1px solid #eee;
+}
+.menu3 .menucell2 .right {
+  display: flex;
+  align-items: center;
+}
+.menu3 .menucell2 .right text {
+  color: #ccc;
+  font-size: 26rpx;
+  margin-right: 20rpx;
+}
+.menu3 .menucell2 .right image {
+  width: 30rpx;
+}
+
+/*菜单4*/
+.menu4 .menucell {
+  padding: 30rpx 80rpx 30rpx 50rpx;
+  position: relative;
+  margin-top: 0;
+  background-color: #fff;
+  transition: background-color .2s;
+  border-top: 1px solid #eee;
+}
+.menu4 .menucell:first-child {
+  border-top: 0;
+}
+.menu4 .menucell.active {
+  background-color: #fafafa;
+}
+.menu4 .menucell:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 40rpx;
+  top: 40rpx;
+  border-top: 2px solid #c4c4c6;
+  border-right: 2px solid #c4c4c6;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 16rpx;
+  height: 16rpx;
+}
+.menu4 .menupic {
+  position: absolute;
+  left: 50rpx;
+  top: 26rpx;
+  line-height: 0;
+}
+.menu4 .menupic image{
+  width: 50rpx;
+  vertical-align: middle;
+}
+.menu4 .menutxt {
+  color: #666;
+  font-size: 32rpx;
+}
+
+.menu4 .menucell2 {
+  padding: 30rpx 40rpx 30rpx 120rpx;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  background-color: #fff;
+  transition: background-color .2s;
+  border-top: 1px solid #eee;
+}
+.menu4 .menucell2 .right {
+  display: flex;
+  align-items: center;
+}
+.menu4 .menucell2 .right text {
+  color: #ccc;
+  font-size: 26rpx;
+  margin-right: 20rpx;
+}
+.menu4 .menucell2 .right image {
+  width: 30rpx;
+}

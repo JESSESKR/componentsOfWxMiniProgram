@@ -1,0 +1,83 @@
+<!-- 查看更多出行时间 -->
+<block wx:if="{{horizontal}}">
+  <view class="calendarList calendarList-horizontal" id="calendarList" >
+      <!-- 循环年 -->
+      <swiper style="height: {{swiperHeight || 1}}px;">
+      
+      <block wx:for="{{dateList}}" wx:key="year" wx:for-index="year" wx:for-item="monthItem">
+          <!-- 循环月 -->
+          <block wx:for="{{monthItem}}" wx:key="month" wx:for-index="month" wx:for-item="dateItem">
+            <swiper-item class="calendar_cell">
+              <view class="cale-wrap">
+                <view class="calendar_head">
+                  <view class="yearTitle">{{year}}</view>
+                  <view class="calendar_month">{{month}}月</view>
+                </view>
+
+                <!-- 日历主体 -->
+                <view class='calendar_bd'>
+                  <view class='header'>
+                    <view wx:for='{{weeks}}' wx:key=''>{{item}}</view>
+                  </view>
+                  
+                  <view class='date-box'>
+                    <!-- 日期循环 -->
+                    <block wx:for="{{dateItem}}" wx:key="index">
+                      <view class='{{item.active ? "activeDay" : ""}}' data-year="{{year}}" data-month="{{month}}" data-date="{{item.dateNum}}" data-active="{{item.active}}" catchtap="{{canClickDate ? (limitEnterDateClick ? (item.canSelect ? 'dateClick' : '') : 'dateClick') : ''}}">
+                        <view class='date-head' style="height:{{dateHeight}}rpx;">
+                          <view class="date-num">{{item.dateNum}}</view>
+                          <view class="date-price"><span class="yan" wx:if="{{item.price}}">￥</span>{{item.price}}</view>
+                        </view>
+                      </view>
+                    </block>
+                    <!-- 日期循环结束 -->
+                  </view>
+                </view>
+              </view>
+            </swiper-item>
+          </block>
+          <!-- 循环月结束 -->
+      </block>
+      </swiper>
+      <!-- 循环年结束 -->
+  </view>
+</block>
+
+<block wx:else>
+  <view class="calendarList" id="calendarList" >
+      <!-- 循环年 -->
+      <block wx:for="{{dateList}}" wx:key="year" wx:for-index="year" wx:for-item="monthItem">
+        <view class="yearTitle">{{year}}</view>
+          <!-- 循环月 -->
+          <block wx:for="{{monthItem}}" wx:key="month" wx:for-index="month" wx:for-item="dateItem">
+            <view class="calendar_cell">
+              <view class="calendar_head">
+                <view class="calendar_month">{{month}}月</view>
+              </view>
+
+              <!-- 日历主体 -->
+              <view class='calendar_bd'>
+                <view class='header'>
+                  <view wx:for='{{weeks}}' wx:key=''>{{item}}</view>
+                </view>
+                
+                <view class='date-box'>
+                  <!-- 日期循环 -->
+                  <block wx:for="{{dateItem}}" wx:key="index">
+                    <view class='{{item.active ? "activeDay" : ""}}' data-year="{{year}}" data-month="{{month}}" data-date="{{item.dateNum}}" data-active="{{item.active}}" catchtap="{{canClickDate ? (limitEnterDateClick ? (item.canSelect ? 'dateClick' : '') : 'dateClick') : ''}}">
+                      <view class='date-head' style="height:{{dateHeight}}rpx;">
+                        <view class="date-num">{{item.dateNum}}</view>
+                        <view class="date-price"><span class="yan" wx:if="{{item.price}}">￥</span>{{item.price}}</view>
+                      </view>
+                    </view>
+                  </block>
+                  <!-- 日期循环结束 -->
+                </view>
+              </view>
+            </view>
+          </block>
+          <!-- 循环月结束 -->
+      </block>
+      <!-- 循环年结束 -->
+  </view>
+</block>

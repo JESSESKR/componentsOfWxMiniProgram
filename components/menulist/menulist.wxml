@@ -1,0 +1,59 @@
+<!-- 传入数据 -->
+<!-- var listData = [
+      {
+        icon: "/images/icon_user2.png",
+        text: "标题1",
+        url: "/pages/my/my"
+        imgcss: ""
+      },
+      {
+        icon: "/images/icon_user2.png",
+        text: "标题2"
+        url: "/pages/my/my",
+        imgcss: ""
+      },
+      {
+        icon: "/images/icon_user2.png",
+        text: "标题3"
+        url: "/pages/my/my",
+        imgcss: ""
+      },
+    ] -->
+<!-- 类型1 -->
+<view class="menu1" wx:if="{{type == 1}}">
+  <block wx:for="{{listData}}" wx:key="index">
+    <view class="menucell" data-url="{{item.url}}" catchtap="navigatorUrl">
+      <view class="menupic"><image src="{{item.icon}}" mode="widthFix"></image></view>
+      <view class="menutxt">{{item.text}}</view>
+    </view>
+  </block>
+</view>
+
+<!-- 类型2 -->
+<view class="menu2" wx:if="{{type == 2}}">
+  <block wx:for="{{listData}}" wx:key="index">
+    <view class="menucell" data-url="{{item.url}}" catchtap="navigatorUrl">
+      <view class="menupic"><image src="{{item.icon}}" mode="widthFix"></image></view>
+      <view class="menutxt">{{item.text}}</view>
+    </view>
+  </block>
+</view>
+
+<!-- 类型3 -->
+<view class="menu3" wx:if="{{type == 3}}">
+  <block wx:for="{{listData}}" wx:key="index">
+    <view class="menucell" hover-class="active" data-url="{{item.url}}" catchtap="navigatorUrl">
+      <view class="menupic"><image src="{{item.icon}}" mode="widthFix"></image></view>
+      <view class="menutxt">{{item.text}}</view>
+    </view>
+  </block>
+</view>
+
+<!-- 类型4 -->
+<view class="menu4 font-Pf" wx:if="{{type == 4}}">
+  <block wx:for="{{listData}}" wx:key="index">
+    <view class="menucell" hover-class="active" data-url="{{item.url}}" catchtap="navigatorUrl">
+      <view class="menutxt">{{item.text}}</view>
+    </view>
+  </block>
+</view>

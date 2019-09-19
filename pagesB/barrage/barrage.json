@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "弹幕",
+  "usingComponents": {
+    "barrage": "/components/barrage/barrage"
+  }
+}

@@ -1,0 +1,13 @@
+<view class="bg_white">
+  <view class="text-head">按钮(默认) .btn</view>
+  <view class="p_30">
+    <button class="btn">按钮</button>
+  </view>
+</view>
+
+<view class="bg_white mt_20">
+  <view class="text-head">按钮(圆角) .btn.round</view>
+  <view class="p_30">
+    <button class="btn round">按钮</button>
+  </view>
+</view>

@@ -1,0 +1,90 @@
+<view class="pb_30">
+  <view class="mt_20">
+    <view class="bg_white p_30"><text class="code" decode="true" space="true">&lt;calendar id=""&gt;&lt;/calendar&gt;</text></view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">参数</view>
+    <view class="bg_white p_30">
+      <view class="mt_10"><text class="code">date</text>：传入的日期列表，默认<text class="code">空数组</text></view>
+      <view class="mt_10">结构[{date: "1994-07-07",price: "1000"}]</view>
+      <view class="mt_10"><text class="code">canClickDate</text>：是否能够点击日期高亮，默认<text class="code">true</text></view>
+      <view class="mt_10"><text class="code">mutiSelect</text>：是否能够多选日期，默认<text class="code">false</text>（canClickDate需要为true）</view>
+      <view class="mt_10"><text class="code">limitEnterDateClick</text>：限制只能点击传入的日期，默认<text class="code">false</text>（canClickDate需要为true）</view>
+      <view class="mt_10"><text class="code">showHighLight</text>：初始化后是否显示日期高亮，默认<text class="code">true</text></view>
+      <view class="mt_10"><text class="code">dateHeight</text>：自定义日期高度，默认<text class="code">90</text></view>
+      <view class="mt_10"><text class="code">horizontal</text>：是否水平显示，默认<text class="code">true</text></view>
+      <view class="mt_10"><text class="code">horizontalStart</text>：水平显示开始时间，默认<text class="code">2019-01</text></view>
+      <view class="mt_10"><text class="code">horizontalEnd</text>：水平显示结束时间，默认<text class="code">2019-02</text></view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">事件</view>
+    <view class="bg_white p_30">
+      <view class="mt_10">点击日期事件</view>
+      <view class="mt_10">catch:<text class="code">calendarClick</text></view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">方法</view>
+    <view class="bg_white p_30">
+      <view class="mt_10">init（<text class="code">date</text>，<text class="code">callback</text>）</view>
+      <view class="mt_10"><text class="code">date</text>：传入的日期列表</view>
+      <view class="mt_10 fs-12" style="color:#ff0000;">（注：传入多个日期时，建议设置多选或者不可点击选择）</view>
+      <view class="mt_10"><text class="code">callback</text>：日历初始化完成后的回调</view>
+      <view class="mt_20">clear（）</view>
+      <view class="mt_10">清除选中的日期</view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">tip</view>
+    <view class="bg_white p_30">
+      <view class="mt_10">init之后不要重复init，否则可能会影响性能</view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="bg_white p_30">
+      <view class="mt_10"><button class="btn" data-index="1" catchtap="clickDate">默认</button></view>
+      <view class="mt_10"><button class="btn" data-index="2" catchtap="clickDate">设置竖向，<text class="code">horizontal</text>为false</button></view>
+      <view class="mt_10"><button class="btn" data-index="3" catchtap="clickDate">设置日期无法点击，<text class="code">canClickDate</text>false</button></view>
+      <view class="mt_10"><button class="btn" data-index="4" catchtap="clickDate">设置日期多选，<text class="code">mutiSelect</text>true</button></view>
+      <view class="mt_10"><button class="btn text-l" data-index="5" catchtap="clickDate" style="line-height: 20px;">设置日期可以点击但只能点击传入的日期，<text class="code">limitEnterDateClick</text>为true，<text class="code">mutiSelect</text>为true</button></view>
+      <view class="mt_10"><button class="btn text-l" data-index="6" catchtap="clickDate" style="line-height: 20px;">设置传入日期初始化不高亮但可以多选，<text class="code">showHighLight</text>为false，<text class="code">mutiSelect</text>为true</button></view>
+      <view class="mt_10"><button class="btn text-l" data-index="7" catchtap="clickDate" style="line-height: 20px;">横向模式设置开始时间和结束时间，<text class="code">horizontalStart</text>为2019-01，<text class="code">horizontalEnd</text>为2019-12</button></view>
+    </view>
+  </view>
+</view>
+
+<!-- 默认 -->
+<modal id="modal1" boxWidth="600">
+  <calendar id="calendar1" dateHeight="60" catch:calendarClick="afterClickDate"></calendar>
+</modal>
+
+<!-- 竖向 -->
+<modal id="modal2" boxWidth="600">
+  <calendar id="calendar2" dateHeight="60" horizontal="{{false}}" mutiSelect="{{true}}" catch:calendarClick="afterClickDate"></calendar>
+</modal>
+
+<!-- 设置日期无法点击 -->
+<modal id="modal3" boxWidth="600">
+  <calendar id="calendar3" dateHeight="60" canClickDate="{{false}}" horizontalStart="2019-05" horizontalEnd="2019-10" catch:calendarClick="afterClickDate"></calendar>
+</modal>
+
+<!-- 设置日期多选 -->
+<modal id="modal4" boxWidth="600">
+  <calendar id="calendar4" dateHeight="60" mutiSelect="{{true}}" horizontalStart="2019-05" horizontalEnd="2019-10" catch:calendarClick="afterClickDate"></calendar>
+</modal>
+
+<!-- 设置日期只能点击传入的日期 -->
+<modal id="modal5" boxWidth="600">
+  <calendar id="calendar5" dateHeight="60" canClickDate="{{true}}" limitEnterDateClick="{{true}}" mutiSelect="{{true}}" horizontalStart="2019-05" horizontalEnd="2019-10" catch:calendarClick="afterClickDate"></calendar>
+</modal>
+
+<!-- 设置传入日期不高亮但可以多选 -->
+<modal id="modal6" boxWidth="600">
+  <calendar id="calendar6" dateHeight="60" canClickDate="{{true}}" limitEnterDateClick="{{true}}" mutiSelect="{{true}}" showHighLight="{{false}}" horizontalStart="2019-05" horizontalEnd="2019-10" catch:calendarClick="afterClickDate"></calendar>
+</modal>
+
+<!-- 横向模式设置开始时间和结束时间 -->
+<modal id="modal7" boxWidth="600">
+  <calendar id="calendar7" dateHeight="60" horizontalStart="2019-01" horizontalEnd="2019-12" catch:calendarClick="afterClickDate"></calendar>
+</modal>

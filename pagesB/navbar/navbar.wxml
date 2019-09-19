@@ -1,0 +1,24 @@
+<view class="pb_30" style="padding-top: 120rpx;">
+  <view class="mt_20">
+    <view class="bg_white p_30">
+      <view>微信版本6.6.0以上在 app.json > window 中设置<text class="code">navigationStyle:"custom"</text>，调试使用基础库1.7.0。</view>
+      <view><text class="code" decode="true" space="true">&lt;nav&gt;&lt;/nav&gt;</text></view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">参数</view>
+    <view class="bg_white p_30">
+      <view class="mt_10"><text class="code">title</text>：导航栏标题，默认<text class="code">空字符串</text></view>
+      <view class="mt_10"><text class="code">bgColor</text>：导航栏背景色，默认<text class="code">#fff</text></view>
+      <view class="mt_10"><text class="code">bgImage</text>：导航栏背景图片，默认<text class="code">空字符串</text></view>
+      <view class="mt_10"><text class="code">hasBack</text>：导航栏是否有返回按钮，默认<text class="code">true</text></view>
+      <view class="mt_10"><text class="code">backColor</text>：导航栏返回按钮颜色，默认<text class="code">#333</text></view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">方法</view>
+    <view class="bg_white p_30">无</view>
+  </view>
+</view>
+
+<nav title="标题"></nav>

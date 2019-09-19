@@ -1,0 +1,34 @@
+<view class="barrage" style="width: {{width}}rpx;height: {{height}}rpx;">
+  <!-- 轨道1 -->
+  <view class="singleBarrage" style="{{barrage0.show ? 'animation: dmanimation '+barrage0.duration+'s linear;' : ''}}left:100%;top:40rpx;" catchtouchmove="stopPageScroll">
+    <view class="pic"><image src="{{barrage0.pic}}"></image></view>
+    <view class="right">
+      <view class="title">{{barrage0.name}}</view>
+      <view class="subtitle">{{barrage0.text}}</view>
+    </view>
+  </view>
+  <!-- 轨道2 -->
+  <view class="singleBarrage" style="{{barrage1.show ? 'animation: dmanimation '+barrage1.duration+'s linear;' : ''}}left:100%;top:120rpx;" catchtouchmove="stopPageScroll">
+    <view class="pic"><image src="{{barrage1.pic}}"></image></view>
+    <view class="right">
+      <view class="title">{{barrage1.name}}</view>
+      <view class="subtitle">{{barrage1.text}}</view>
+    </view>
+  </view>
+  <!-- 轨道3 -->
+  <view class="singleBarrage" style="{{barrage2.show ? 'animation: dmanimation '+barrage2.duration+'s linear;' : ''}}left:100%;top:200rpx;" catchtouchmove="stopPageScroll">
+    <view class="pic"><image src="{{barrage2.pic}}"></image></view>
+    <view class="right">
+      <view class="title">{{barrage2.name}}</view>
+      <view class="subtitle">{{barrage2.text}}</view>
+    </view>
+  </view>
+  <!-- 轨道4 -->
+  <view class="singleBarrage" style="{{barrage3.show ? 'animation: dmanimation '+barrage3.duration+'s linear;' : ''}}left:100%;top:280rpx;" catchtouchmove="stopPageScroll">
+    <view class="pic"><image src="{{barrage3.pic}}"></image></view>
+    <view class="right">
+      <view class="title">{{barrage3.name}}</view>
+      <view class="subtitle">{{barrage3.text}}</view>
+    </view>
+  </view>
+</view>

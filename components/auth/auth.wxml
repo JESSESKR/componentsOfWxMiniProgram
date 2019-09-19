@@ -1,0 +1,20 @@
+<view class="authmenu" wx:if="{{showAuthModal}}" catchtouchmove="preventScroll">
+    <view class="authmainView">
+        <view class="topTitle">微信授权</view>
+        <view class="pic">
+            <image class="authImage" src="/images/bg1.jpg"></image>
+        </view>
+        <view class="words">常熟零距离二手房申请获得以下权限：</view>
+        <view class="line"></view>
+        <view class="words2">
+            <text class="dot">·</text>
+            获取你的公开信息（昵称、头像等）
+        </view>
+        <view class="bottomview">
+            <button wx:if="{{canIUse}}" open-type="getUserInfo" class="authbtn" bindgetuserinfo="confirmGetUserInfo">
+                允许授权
+            </button>
+            <view class="authbtn-no" wx:else>请升级微信版本</view>
+        </view>
+    </view>
+</view>

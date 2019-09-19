@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "弹窗",
+  "usingComponents": {
+    "modal": "/components/modal/modal"
+  }
+}

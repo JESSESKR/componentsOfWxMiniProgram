@@ -1,0 +1,24 @@
+<view class="pb_30">
+  <view class="mt_20">
+    <view class="bg_white p_30"><text class="code" decode="true" space="true">&lt;waterfall id=""&gt;&lt;/waterfall&gt;</text></view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">参数</view>
+    <view class="bg_white p_30">
+      <view class="mt_10"><text class="code">list</text>：当前页列表，默认<text class="code">空数组</text></view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">方法</view>
+    <view class="bg_white p_30">
+      无
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="bg_white p_30">
+      列表list构造 [pic: "",text: ""]
+    </view>
+  </view>
+</view>
+
+<waterfall list="{{list}}"></waterfall>

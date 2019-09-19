@@ -1,0 +1,55 @@
+page {
+  padding-bottom: 100rpx;
+}
+.nav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #fff;
+    z-index: 99999;
+    border-top: #eee 2rpx solid;
+}
+
+.nav .nav-list {
+    display: flex;
+    height: 100%;
+}
+.nav .nav-box {
+    flex: 1;
+    text-align: center;
+    padding: 10rpx 0;
+    line-height: 0;
+    color: #333;
+}
+.nav .nav-box .img {
+    width: 50rpx;
+    height: 50rpx;
+    margin-bottom: 5rpx;
+    background-size: 100% !important;
+}
+.nav .nav-box .img1 {
+    display: inline-block;
+}
+.nav .nav-box .img2 {
+    display: none;
+}
+.nav .nav-box.nav-main-img .img1 {
+  display: none;
+}
+.nav .nav-box.nav-main-img .img2 {
+  display: inline-block;
+}
+.nav .nav-box .img image {
+    width: 100%;
+    height: 100%;
+}
+.nav .nav-box .text {
+    display: block;
+    line-height: 26rpx;
+    font-size: 22rpx;
+    color: #999;
+}
+.nav .nav-box.nav-main-img .text {
+    color: #1296db;
+}

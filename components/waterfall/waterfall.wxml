@@ -1,0 +1,28 @@
+<view class="list1">
+  <block wx:if="{{leftList.length > 0 || rightList.length > 0}}">
+    <!-- 左侧布局 -->
+    <view class="listleft">
+      <block wx:for="{{leftList}}" wx:key="index">
+        <view class="item" catchtap="previewList" data-url="{{item.pic}}" style="background-color: #fff">
+          <view class="item-inner">
+            <image src="{{item.pic}}" mode="widthFix" lazy-load="true"></image>
+            <view class="txt">{{item.text}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <!-- 右侧布局 -->
+    <view class="listright">
+      <block wx:for="{{rightList}}" wx:key="index">
+        <view class="item" catchtap="previewList" data-url="{{item.pic}}" style="background-color: #fff">
+          <view class="item-inner">
+            <image src="{{item.pic}}" mode="widthFix" lazy-load="true"></image>
+            <view class="txt">{{item.text}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </block>
+
+  <view style="display: none"><image wx:for="{{images}}" wx:key="index" src="{{item.pic}}" data-index="{{index}}" bindload="onImageLoad"></image></view>
+</view>

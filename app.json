@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/components/components",
+    "pages/menu/menu"
+  ],
+  "subpackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        "text/text",
+        "button/button",
+        "color/color"
+      ]
+    },{
+      "root": "pagesB",
+      "pages": [
+        "barrage/barrage",
+        "modal/modal",
+        "toast/toast",
+        "navbar/navbar",
+        "tabbar/tabbar",
+        "sidemodal/sidemodal",
+        "waterfall/waterfall",
+        "calendar/calendar"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "模板",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f0f0f0"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "样式",
+        "iconPath": "images/circle1.png",
+        "selectedIconPath": "images/circle2.png"
+      },
+      {
+        "pagePath": "pages/components/components",
+        "text": "组件",
+        "iconPath": "images/square1.png",
+        "selectedIconPath": "images/square2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

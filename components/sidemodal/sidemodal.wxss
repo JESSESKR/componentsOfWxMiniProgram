@@ -1,0 +1,51 @@
+.slideModal-bg {
+  position: fixed;
+  left: 0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.slideModal-box {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  transform: translate(-50%,-50%);
+  z-index: 1001;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.slideModal-box.padding-0 {
+  padding: 0;
+}
+.slideModal-bg.on {
+  opacity: 1;
+}
+.slideModal-box.on {
+  opacity: 1;
+}
+
+/*从左进入动画*/
+.slideModal-box.fromLeft {
+  left: 0;
+  transform: translate(-100%,0);
+  transition: all .5s;
+}
+.slideModal-box.fromLeft.on {
+  transform: translate(0,0);
+}
+
+/*从右进入动画*/
+.slideModal-box.fromRight {
+  right: 0;
+  transform: translate(100%,0);
+  transition: all .5s;
+}
+.slideModal-box.fromRight.on {
+  transform: translate(0,0);
+}

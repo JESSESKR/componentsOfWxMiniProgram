@@ -1,0 +1,4 @@
+<view class="modal-bg {{showModalAnimation ? 'on' : ''}}" wx:if="{{modalshow}}" catchtouchmove="forbidPageScroll"></view>
+<view class="modal-box {{showModalAnimation ? 'on' : ''}}" wx:if="{{modalshow}}" catchtouchmove="forbidPageScroll">
+  <view class="title">{{title}}</view>
+</view>

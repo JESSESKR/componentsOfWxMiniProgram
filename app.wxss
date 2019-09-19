@@ -1,0 +1,195 @@
+/*reset*/
+view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label
+{
+  -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  line-height: 1;
+  color: #333333;
+}
+button {
+  border: none;
+  text-align: inherit;
+  padding: 0;
+  margin:0;
+  line-height: inherit;
+  background: transparent;
+  color: inherit;
+  border-radius: 0;
+  font-size: inherit;
+}
+button:after {
+  border: none;
+}
+
+/*页面默认样式*/
+page {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+/*文字大小*/
+.fs-10 {font-size: 20rpx !important;}
+.fs-11 {font-size: 22rpx !important;}
+.fs-12 {font-size: 24rpx !important;}
+.fs-13 {font-size: 26rpx !important;}
+.fs-14 {font-size: 28rpx !important;}
+.fs-15 {font-size: 30rpx !important;}
+.fs-16 {font-size: 32rpx !important;}
+.fs-17 {font-size: 34rpx !important;}
+.fs-18 {font-size: 36rpx !important;}
+.fs-19 {font-size: 38rpx !important;}
+.fs-20 {font-size: 40rpx !important;}
+.fs-xs {font-size: 20rpx !important;}
+.fs-sm {font-size: 24rpx !important;}
+.fs-d {font-size: 28rpx !important;}
+.fs-lg {font-size: 32rpx !important;}
+.fs-xl {font-size: 36rpx !important;}
+
+/*文字布局*/
+.text-l {text-align: left !important;}
+.text-c {text-align: center !important;}
+.text-r {text-align: right !important;}
+
+/*文本类型*/
+.text-head {font-size: 32rpx;background-color: #fff;border-bottom: 1px solid #eee;padding: 20rpx 30rpx;}
+
+/*padding预设*/
+.p_10 {padding: 10rpx !important;}
+.p_20 {padding: 20rpx !important;}
+.p_30 {padding: 30rpx !important;}
+.p_40 {padding: 40rpx !important;}
+.p_50 {padding: 50rpx !important;}
+.p_60 {padding: 60rpx !important;}
+.pl_10 {padding-left: 10rpx !important;}
+.pl_20 {padding-left: 20rpx !important;}
+.pl_30 {padding-left: 30rpx !important;}
+.pl_40 {padding-left: 40rpx !important;}
+.pl_50 {padding-left: 50rpx !important;}
+.pl_60 {padding-left: 60rpx !important;}
+.pr_10 {padding-right: 10rpx !important;}
+.pr_20 {padding-right: 20rpx !important;}
+.pr_30 {padding-right: 30rpx !important;}
+.pr_40 {padding-right: 40rpx !important;}
+.pr_50 {padding-right: 50rpx !important;}
+.pr_60 {padding-right: 60rpx !important;}
+.pt_10 {padding-top: 10rpx !important;}
+.pt_20 {padding-top: 20rpx !important;}
+.pt_30 {padding-top: 30rpx !important;}
+.pt_40 {padding-top: 40rpx !important;}
+.pt_50 {padding-top: 50rpx !important;}
+.pt_60 {padding-top: 60rpx !important;}
+.pb_10 {padding-bottom: 10rpx !important;}
+.pb_20 {padding-bottom: 20rpx !important;}
+.pb_30 {padding-bottom: 30rpx !important;}
+.pb_40 {padding-bottom: 40rpx !important;}
+.pb_50 {padding-bottom: 50rpx !important;}
+.pb_60 {padding-bottom: 60rpx !important;}
+.pv_10 {padding-top: 10rpx !important;padding-bottom: 10rpx !important;}
+.pv_20 {padding-top: 20rpx !important;padding-bottom: 20rpx !important;}
+.pv_30 {padding-top: 30rpx !important;padding-bottom: 30rpx !important;}
+.pv_40 {padding-top: 40rpx !important;padding-bottom: 40rpx !important;}
+.pv_50 {padding-top: 50rpx !important;padding-bottom: 50rpx !important;}
+.pv_60 {padding-top: 60rpx !important;padding-bottom: 60rpx !important;}
+.ph_10 {padding-left: 10rpx !important;padding-right: 10rpx !important;}
+.ph_20 {padding-left: 20rpx !important;padding-right: 20rpx !important;}
+.ph_30 {padding-left: 30rpx !important;padding-right: 30rpx !important;}
+.ph_40 {padding-left: 40rpx !important;padding-right: 40rpx !important;}
+.ph_50 {padding-left: 50rpx !important;padding-right: 50rpx !important;}
+.ph_60 {padding-left: 60rpx !important;padding-right: 60rpx !important;}
+
+/*margin预设*/
+.m_10 {margin: 10rpx !important;}
+.m_20 {margin: 20rpx !important;}
+.m_30 {margin: 30rpx !important;}
+.m_40 {margin: 40rpx !important;}
+.m_50 {margin: 50rpx !important;}
+.m_60 {margin: 60rpx !important;}
+.ml_10 {margin-left: 10rpx !important;}
+.ml_20 {margin-left: 20rpx !important;}
+.ml_30 {margin-left: 30rpx !important;}
+.ml_40 {margin-left: 40rpx !important;}
+.ml_50 {margin-left: 50rpx !important;}
+.ml_60 {margin-left: 60rpx !important;}
+.mr_10 {margin-right: 10rpx !important;}
+.mr_20 {margin-right: 20rpx !important;}
+.mr_30 {margin-right: 30rpx !important;}
+.mr_40 {margin-right: 40rpx !important;}
+.mr_50 {margin-right: 50rpx !important;}
+.mr_60 {margin-right: 60rpx !important;}
+.mt_10 {margin-top: 10rpx !important;}
+.mt_20 {margin-top: 20rpx !important;}
+.mt_30 {margin-top: 30rpx !important;}
+.mt_40 {margin-top: 40rpx !important;}
+.mt_50 {margin-top: 50rpx !important;}
+.mt_60 {margin-top: 60rpx !important;}
+.mb_10 {margin-bottom: 10rpx !important;}
+.mb_20 {margin-bottom: 20rpx !important;}
+.mb_30 {margin-bottom: 30rpx !important;}
+.mb_40 {margin-bottom: 40rpx !important;}
+.mb_50 {margin-bottom: 50rpx !important;}
+.mb_60 {margin-bottom: 60rpx !important;}
+.mv_10 {margin-top: 10rpx !important;margin-bottom: 10rpx !important;}
+.mv_20 {margin-top: 20rpx !important;margin-bottom: 20rpx !important;}
+.mv_30 {margin-top: 30rpx !important;margin-bottom: 30rpx !important;}
+.mv_40 {margin-top: 40rpx !important;margin-bottom: 40rpx !important;}
+.mv_50 {margin-top: 50rpx !important;margin-bottom: 50rpx !important;}
+.mv_60 {margin-top: 60rpx !important;margin-bottom: 60rpx !important;}
+.mh_10 {margin-left: 10rpx !important;margin-right: 10rpx !important;}
+.mh_20 {margin-left: 20rpx !important;margin-right: 20rpx !important;}
+.mh_30 {margin-left: 30rpx !important;margin-right: 30rpx !important;}
+.mh_40 {margin-left: 40rpx !important;margin-right: 40rpx !important;}
+.mh_50 {margin-left: 50rpx !important;margin-right: 50rpx !important;}
+.mh_60 {margin-left: 60rpx !important;margin-right: 60rpx !important;}
+
+/*颜色*/
+.black {color: #333333;}
+.grey {color: #999999;}
+.white {color: #ffffff;}
+.bg_white {background-color: #ffffff;}
+
+/*按钮*/
+.btn {
+  position: relative;
+  border: 0;
+  border-radius: 4px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  line-height: 1;
+  text-align: center;
+  margin-left:initial;
+  margin-right:initial;
+  background-color: #f0f0f0;
+  padding: 16rpx 30rpx;
+}
+.btn.round {
+  border-radius: 100rpx;
+}
+
+/*边框线*/
+.border {border: 1px solid #eee;}
+.border-l {border-left: 1px solid #eee;}
+.border-r {border-right: 1px solid #eee;}
+.border-t {border-top: 1px solid #eee;}
+.border-b {border-bottom: 1px solid #eee;}
+
+/*代码*/
+.code {
+  font-size: 28rpx;
+  background-color: #a3eaff;
+  color: #00a0fd;
+  padding: 4rpx 12rpx;
+  border-radius: 6rpx;
+  display: inline;
+  line-height: 1.5;
+}
+.breakall {
+  word-break: break-all;
+}

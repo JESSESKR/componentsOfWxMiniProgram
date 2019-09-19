@@ -1,0 +1,10 @@
+<view class="navwrap" style="height:{{CustomBarHeight}}px">
+  <view class="navbar" style="height:{{CustomBarHeight}}px;padding-top:{{StatusBarHeight}}px;background-color:{{bgColor}};{{bgImage?'background-image:url(' + bgImage+')':''}}">
+    <view class="navleft" bindtap="back" wx:if="{{hasBack}}">
+      <text class="navback" style="border-color:{{backColor}}"></text>
+    </view>
+    <view class="content" style="top:{{StatusBarHeight}}px">
+      {{title}}
+    </view>
+  </view>
+</view>

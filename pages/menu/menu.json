@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "菜单",
+  "usingComponents": {
+    "menulist": "/components/menulist/menulist"
+  }
+}

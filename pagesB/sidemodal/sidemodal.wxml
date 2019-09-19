@@ -1,0 +1,39 @@
+<view class="pb_30">
+  <view class="mt_20">
+    <view class="bg_white p_30"><text class="code" decode="true" space="true">&lt;slideModal id=""&gt;自定义内容&lt;/slideModal&gt;</text></view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">参数</view>
+    <view class="bg_white p_30">
+      <view class="mt_10"><text class="code">boxWidth</text>：弹出层的宽度，默认<text class="code">650</text></view>
+      <view class="mt_10"><text class="code">directionFrom</text>：弹出层从哪个方向进入，默认<text class="code">right</text>，预设<text class="code">left | right</text></view>
+      <view class="mt_10"><text class="code">maskClose</text>：弹出层是否能点击遮罩关闭，默认<text class="code">true</text></view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">方法</view>
+    <view class="bg_white p_30">
+      <view class="mt_10">show（<text class="code">openCallback</text>，<text class="code">closeCallback</text>）</view>
+      <view class="mt_10"><text class="code">openCallback</text>：打开弹出层时的回调</view>
+      <view class="mt_10"><text class="code">closeCallback</text>：完全关闭弹出层时的回调</view>
+      <view class="mt_20">close（<text class="code">closeCallback</text>）</view>
+      <view class="mt_10"><text class="code">closeCallback</text>：完全关闭弹出层时的回调，tip:会覆盖打开时传入的closeCallback</view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="bg_white p_30">
+      <view class="mt_10"><button class="btn" data-index="1" catchtap="defaultModal">默认</button></view>
+      <view class="mt_10"><button class="btn" data-index="2" catchtap="defaultModal">设置<text class="code">boxWidth</text>为500</button></view>
+      <view class="mt_10"><button class="btn" data-index="3" catchtap="defaultModal">设置<text class="code">directionFrom</text>为left</button></view>
+      <view class="mt_10"><button class="btn" data-index="4" catchtap="defaultModal">设置<text class="code">maskClose</text>为false</button></view>
+    </view>
+  </view>
+</view>
+
+<slideModal id="slideModal1">文本文本</slideModal>
+
+<slideModal id="slideModal2" boxWidth="500">文本文本</slideModal>
+
+<slideModal id="slideModal3" directionFrom="left">文本文本</slideModal>
+
+<slideModal id="slideModal4" maskClose="{{false}}">文本文本<view class="text-c"><button class="btn" catchtap="close">关闭</button></view></slideModal>

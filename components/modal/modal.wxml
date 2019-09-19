@@ -1,0 +1,5 @@
+<view class="modal-bg {{showModalAnimation ? 'on' : ''}}" wx:if="{{modalshow}}" catchtap="{{maskClose ? 'closeModal' : ''}}" catchtouchmove="forbidPageScroll"></view>
+<view class="modal-box {{bottomIn ? 'modal-box2' : ''}} {{showModalAnimation ? 'on' : ''}} {{boxPadding ? '' : 'padding-0'}} {{boxHaveBg ? '' : 'nobg'}}" wx:if="{{modalshow}}" style="width: {{boxWidth}}rpx;top: {{boxTop}};" catchtouchmove="forbidPageScroll">
+  <slot></slot>
+  <view class="modal-close" wx:if="{{showClose}}" catchtap="closeModal"></view>
+</view>

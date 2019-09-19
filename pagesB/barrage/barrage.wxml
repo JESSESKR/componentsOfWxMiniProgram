@@ -1,0 +1,31 @@
+<view class="pb_30">
+  <view class="mt_20">
+    <view class="bg_white p_30"><text class="code" decode="true" space="true">&lt;barrage id=""&gt;&lt;/barrage&gt;</text></view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">参数</view>
+    <view class="bg_white p_30">
+      <view class="mt_10"><text class="code">width</text>：弹幕区域宽度，默认<text class="code">400</text></view>
+      <view class="mt_10"><text class="code">height</text>：弹幕区域高度，默认<text class="code">750</text></view>
+      <view class="mt_10"><text class="code">list</text>：传入数据，默认<text class="code">空数组</text></view>
+    </view>
+  </view>
+
+  <view class="mt_20">
+    <view class="text-head">方法</view>
+    <view class="bg_white p_30">
+      <view class="mt_10">start（<text class="code">number</text>）</view>
+      <view><text class="code">number</text>：所使用的轨道数（注：总共预设<text class="code">4</text>条轨道，超出4的默认使用4条轨道，如需大于4条轨道的，手动修改wxml增加轨道）</view>
+      <view class="mt_10">clear（）：清除弹幕</view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="bg_white p_30">
+      <view class="mt_10"><button class="btn" catchtap="start">弹幕开始</button></view>
+      <view class="mt_10"><button class="btn" catchtap="end">弹幕清理</button></view>
+    </view>
+  </view>
+</view>  
+
+
+<barrage id="barrage" list="{{list}}" useMask="{{false}}"></barrage>

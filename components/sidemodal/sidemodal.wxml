@@ -1,0 +1,4 @@
+<view class="slideModal-bg {{slideModalShowAnimation ? 'on' : ''}}" wx:if="{{slideModalshow}}" catchtap="{{maskClose ? 'close' : ''}}" catchtouchmove="forbidPageScroll"></view>
+<view class="slideModal-box {{directionFrom == 'left' ? 'fromLeft' : (directionFrom == 'right' ? 'fromRight' : '')}} {{slideModalShowAnimation ? 'on' : ''}}" wx:if="{{slideModalshow}}" style="width: {{boxWidth}}rpx;" catchtouchmove="forbidPageScroll">
+  <slot></slot>
+</view>

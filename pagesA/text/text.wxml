@@ -1,0 +1,22 @@
+<view class="pb_30">
+  <view>
+    <view class="text-head">更小号字体 .fs-xs</view>
+    <view class="bg_white p_30"><view class="fs-xs">这是一个文本</view></view>
+  </view>
+  <view class="mt_10">
+    <view class="text-head">小号字体 .fs-sm</view>
+    <view class="bg_white p_30"><view class="fs-sm">这是一个文本</view></view>
+  </view>
+  <view class="mt_10">
+    <view class="text-head">中号字体（默认大小字体） .fs-d</view>
+    <view class="bg_white p_30"><view class="fs-d">这是一个文本</view></view>
+  </view>
+  <view class="mt_10">
+    <view class="text-head">大号字体 .fs-lg</view>
+    <view class="bg_white p_30"><view class="fs-lg">这是一个文本</view></view>
+  </view>
+  <view class="mt_10">
+    <view class="text-head">更大号字体 .fs-xl</view>
+    <view class="bg_white p_30"><view class="fs-xl">这是一个文本</view></view>
+  </view>
+</view>

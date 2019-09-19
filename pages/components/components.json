@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "组件",
+  "usingComponents": {
+    "menulist": "/components/menulist/menulist"
+  }
+}

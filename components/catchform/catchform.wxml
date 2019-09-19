@@ -1,0 +1,4 @@
+<!-- 收集formid组件 -->
+<form report-submit="true" bindsubmit="catchSubmit">
+  <button form-type="submit" class="catchBtn"><slot></slot></button>
+</form>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "slideModal": "/components/sidemodal/sidemodal"
+  }
+}

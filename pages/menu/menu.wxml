@@ -1,0 +1,16 @@
+
+<view style="margin-top: 20rpx;">
+  <menulist listData='{{listData}}' type="1"></menulist>
+</view>
+
+<view style="margin-top: 20rpx;">
+  <menulist listData='{{listData}}' type="2"></menulist>
+</view>
+
+<view style="margin-top: 20rpx;">
+  <menulist listData='{{listData}}' type="3"></menulist>
+</view>
+
+<view style="margin-top: 20rpx;">
+  <menulist listData='{{listData}}' type="4"></menulist>
+</view>
