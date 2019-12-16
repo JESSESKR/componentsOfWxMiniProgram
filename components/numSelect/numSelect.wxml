@@ -1,0 +1,5 @@
+<view class="numselectwrap" catchtap="stopPropagation">
+  <view class="num-minus {{canMius ? 'active' : ''}}" catchtap="numMinus">-</view>
+  <view class="num-input"><input type="number" class="input" value="{{currentNum}}" bindblur="numInputBlur" name="{{inputname}}"></input></view>
+  <view class="num-plus {{canPlus ? 'active' : ''}}" catchtap="numPlus">+</view>
+</view>

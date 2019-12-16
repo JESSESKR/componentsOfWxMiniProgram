@@ -1,0 +1,32 @@
+<view class="pb_30">
+  <view class="mt_20">
+    <view class="bg_white p_30"><text class="code" decode="true" space="true">&lt;bottomModal id=""&gt;自定义内容&lt;/bottomModal&gt;</text></view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">参数</view>
+    <view class="bg_white p_30">
+      <view class="mt_10"><text class="code">boxPadding</text>：弹出层是否有padding，默认<text class="code">true</text></view>
+      <view class="mt_10"><text class="code">boxHaveBg</text>：弹出层是否有白色背景，默认<text class="code">true</text></view>
+      <view class="mt_10"><text class="code">showClose</text>：弹出层是否显示底部关闭按钮，默认<text class="code">false</text></view>
+      <view class="mt_10"><text class="code">maskClose</text>：弹出层是否能点击遮罩关闭，默认<text class="code">true</text></view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">方法</view>
+    <view class="bg_white p_30">
+      <view class="mt_10">showModal（<text class="code">openCallback</text>，<text class="code">closeCallback</text>）</view>
+      <view class="mt_10"><text class="code">openCallback</text>：打开弹出层时的回调</view>
+      <view class="mt_10"><text class="code">closeCallback</text>：完全关闭弹出层时的回调</view>
+      <view class="mt_20">closeModal（<text class="code">closeCallback</text>）</view>
+      <view class="mt_10"><text class="code">closeCallback</text>：完全关闭弹出层时的回调，tip:会覆盖打开时传入的closeCallback</view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="bg_white p_30">
+      <view class="mt_10"><button class="btn" data-index="1" catchtap="defaultModal">默认</button></view>
+    </view>
+  </view>
+</view>
+
+<!-- 默认弹窗 -->
+<bottomModal id="modal1"><view>test</view></bottomModal>

@@ -1,10 +1,19 @@
+//app.js
 const Util = require('utils/util.js')
+
 const updateManager = wx.getUpdateManager();
+
 let args = new Object()
 args.module = 'main_main' //返回app首页
+
 App({
   onLaunch: function () {
+    // 展示本地存储能力
+    var logs = wx.getStorageSync('logs') || []
+    logs.unshift(Date.now())
+
     var that = this
+
     //监听小程序有版本更新事件
     updateManager.onCheckForUpdate(function (res) {
     })
@@ -27,6 +36,9 @@ App({
       })
     })
 
+    //隐藏tabbar
+    // wx.hideTabBar();
+
     //设置屏幕宽高
     wx.getSystemInfo({
       success: function (res) {
@@ -36,9 +48,16 @@ App({
         that.globalData.screenHeightRpx = res.screenHeight / that.globalData.rpx
         that.globalData.screenWidthRpx = res.screenWidth / that.globalData.rpx
         that.globalData.StatusBarHeight = res.statusBarHeight;
-        let custom = wx.getMenuButtonBoundingClientRect();
-        that.globalData.Custom = custom;
-        that.globalData.CustomBarHeight = custom.bottom + custom.top - res.statusBarHeight;
+        //胶囊信息获取兼容处理
+        let custom = wx.hasOwnProperty("getMenuButtonBoundingClientRect") ? wx.getMenuButtonBoundingClientRect() : '';
+        that.globalData.Custom = custom || "";
+        //iphone会出现偶尔获取不到的情况，给默认值
+        if (custom && custom.bottom) {
+          that.globalData.CustomBarHeight = (custom.bottom || 58) + (custom.top || 26) - res.statusBarHeight;
+        }else {
+          that.globalData.CustomBarHeight = 64;
+        }
+        
         console.log(res)
         // console.log(res)
         // console.log(that.globalData.rpx)
@@ -61,6 +80,10 @@ App({
           //that.globalData.bottombarHeight = 40 / that.globalData.rpx + 34 / that.globalData.rpx
           that.globalData.bottombarHeight = 83 / that.globalData.rpx
           that.globalData.isIphone = true;
+          //胶囊信息不兼容且为流海屏时
+          if (that.globalData.CustomBarHeight == 64) {
+            that.globalData.CustomBarHeight = 88
+          }
         } else if (mobileType == 'iPhone') {//其他iphone型号处理
           that.globalData.topbarHeight = 64 / that.globalData.rpx
           that.globalData.bottombarHeight = 49 / that.globalData.rpx
@@ -88,7 +111,6 @@ App({
   },
 
   globalData: {
-    defaultPic: '/images/pic.png',
     userInfo: null,
     backApp: false,
     jump_path: JSON.stringify(args),
@@ -99,5 +121,7 @@ App({
     bottombarheight: 0,
     isIphoneX: false,
     isIphone: false,
+    shareCardPic: "https://mod.happy2cs.com/common/shareCardPic.jpg?v=1",
+    sharePic: "https://mod.happy2cs.com/common/sharePic.jpg?v=1"
   }
 })

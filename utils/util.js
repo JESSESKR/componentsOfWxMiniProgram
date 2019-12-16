@@ -118,7 +118,7 @@ const getObjectType = (originObject) => {
 
 //通用请求发送方法
 const toRequest = (obj) => {
-  if ( getObjectType(obj) != "Object") {
+  if ( getObjectType(obj) != "object") {
     console.warn("传入对象非JSON格式");
     return;
   }

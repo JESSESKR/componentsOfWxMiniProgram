@@ -1,0 +1,1 @@
+<picker mode="multiSelector"  bindchange="bindPickerChange" bindcolumnchange="bindPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" class="input"><text style="{{currentDate ? 'color:#333' : ''}}">{{currentDate ? currentDate : title}}</text></picker>

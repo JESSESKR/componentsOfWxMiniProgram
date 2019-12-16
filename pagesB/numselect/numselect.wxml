@@ -1,0 +1,30 @@
+<view class="pb_30">
+  <view class="mt_20">
+    <view class="bg_white p_30"><text class="code" decode="true" space="true">&lt;numSelect id=""&gt;&lt;/numSelect&gt;</text></view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">参数</view>
+    <view class="bg_white p_30">
+      <view class="mt_10"><text class="code">hasEvent</text>：是否暴露给外部一个改变事件，默认<text class="code">true</text></view>
+      <view class="mt_10"><text class="code">inputname</text>：输入框的placeholder</view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="text-head">方法</view>
+    <view class="bg_white p_30">
+      <view class="mt_10">init（<text class="code">min</text>，<text class="code">max</text>,<text class="code">currentNum</text>）</view>
+      <view class="mt_10"><text class="code">min</text>：最小数量</view>
+      <view class="mt_10"><text class="code">max</text>：最大数量</view>
+      <view class="mt_10"><text class="code">currentNum</text>：当前数量</view>
+    </view>
+  </view>
+  <view class="mt_20">
+    <view class="bg_white p_30">
+      <view class="mt_10"><button class="btn" data-index="2" catchtap="defaultTap">设置init（1,10,2）</button></view>
+    </view>
+  </view>
+
+  <view class="mt_20">
+    <numSelect id="numSelect"></numSelect>
+  </view>
+</view>

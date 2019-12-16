@@ -43,7 +43,19 @@ Page({
       {
         text: "日历",
         url: "/pagesB/calendar/calendar"
-      }
+      },
+      {
+        text: "数量选择",
+        url: "/pagesB/numselect/numselect"
+      },
+      {
+        text: "底部弹出框",
+        url: "/pagesB/bottommodal/bottommodal"
+      },
+      {
+        text: "时间日期选择器",
+        url: "/pagesB/datePicker/datePicker"
+      },
     ]
     this.setData({ listData: listData })
   },

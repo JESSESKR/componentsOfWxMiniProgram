@@ -1,0 +1,4 @@
+<view style="height: 2000rpx;" catchtap="tapStatistic">
+1212
+  <view bindtap="tap2">hah</view>
+</view>

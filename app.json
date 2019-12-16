@@ -10,7 +10,8 @@
       "pages": [
         "text/text",
         "button/button",
-        "color/color"
+        "color/color",
+        "test/test"
       ]
     },{
       "root": "pagesB",
@@ -22,7 +23,10 @@
         "tabbar/tabbar",
         "sidemodal/sidemodal",
         "waterfall/waterfall",
-        "calendar/calendar"
+        "calendar/calendar",
+        "numselect/numselect",
+        "bottommodal/bottommodal",
+        "datePicker/datePicker"
       ]
     }
   ],

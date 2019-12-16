@@ -71,13 +71,20 @@ Component({
         transferDate[startYear] = {};
         for (var i = 0; i < totalMonth;i++) {
           if ( (startMonth + i) > 12) {
-            var year = startYear + parseInt((startMonth + i) / 12);
-            var month = 1 + (startMonth + i) % 12;
+            var year,month;
+            if ((startMonth + i) % 12 == 0) {
+              year = startYear + parseInt((startMonth + i) / 12) - 1;
+              month = 12;
+            }else {
+              year = startYear + parseInt((startMonth + i) / 12);
+              month = (startMonth + i) % 12;
+            }
             if (!transferDate[year]) {
               transferDate[year] = {}
             }
             transferDate[year][month] = this.dateInit(year, month);
           }else {
+            
             transferDate[startYear][startMonth + i] = this.dateInit(startYear, startMonth + i);
           }
         }
@@ -127,9 +134,7 @@ Component({
               for (var i = 0; i < res.length; i++) {
                 if (res[i].height > max) {
                   max = res[i].height;
-                  break;
                 }
-                max = res[i].height;
               }
               this.setData({ swiperHeight: max },() => {
                 wx.hideLoading();

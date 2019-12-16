@@ -20,6 +20,10 @@ Page({
         url: "/pagesA/button/button"
       },
       {
+        text: "Test",
+        url: "/pagesA/test/test"
+      },
+      {
         text: "时间线",
         url: ""
       },
